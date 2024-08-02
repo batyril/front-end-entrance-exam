@@ -1,0 +1,48 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --green-color: #28d979;
+  --gray-color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+.cv {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  column-gap: 0;
+  padding: 10px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    'image '
+    'story'
+    'language'
+    'experience '
+    'tools '
+    'education '
+    'bloks';
+}
+
+/*.cv {*/
+/*  padding: 15px 20px;*/
+/*  margin: 0 auto;*/
+/*  width: 100%;*/
+/*  display: grid;*/
+/*  grid-template-columns: 4fr 4fr 8fr;*/
+/*  grid-template-rows: repeat(6, min-content 124px);*/
+/*  grid-column-gap: 20px;*/
+/*  grid-row-gap: 20px;*/
+/*  grid-template-areas:*/
+/*    'image story language language'*/
+/*    'experience experience experience tools'*/
+/*    'experience experience  experience tools'*/
+/*    'education education bloks bloks'*/
+/*    'education education bloks bloks';*/
+/*}*/
+
+.blocks {
+  grid-area: bloks;
+}

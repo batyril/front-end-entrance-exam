@@ -1,0 +1,8 @@
+.contacts {
+  background-color: #000000;
+  color: #ffffff;
+  .contacts__email {
+    color: #dddddd;
+    text-decoration: none;
+  }
+}

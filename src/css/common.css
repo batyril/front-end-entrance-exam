@@ -1,0 +1,12 @@
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+.block {
+  padding: 12px;
+  background-color: var(--gray-color);
+  border-radius: 12px;
+}

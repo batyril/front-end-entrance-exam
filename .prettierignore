@@ -1,0 +1,17 @@
+dist/
+
+# Ignore node modules
+node_modules/
+
+# Ignore lock files
+package-lock.json
+
+# Ignore logs
+*.log
+
+# Ignore specific file types
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg

@@ -1,0 +1,66 @@
+.experience {
+  grid-area: experience;
+  .experience__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .experience__item {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .experience__item:nth-child(1) {
+    background-color: var(--green-color);
+    color: #ffffff;
+  }
+  .experience__item:first-child:before {
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    font-size: 8px;
+    font-weight: 500;
+    border-radius: 59px;
+    content: 'most recent';
+    width: 61px;
+    height: 16px;
+    background: #7e731266;
+    color: #ddf163;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .experience__years {
+    width: 50%;
+    font-size: 8px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .experience__position {
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .experience__format {
+    font-size: 8px;
+  }
+  .experience__description {
+    font-size: 8px;
+    line-height: 12px;
+    width: 60%;
+    li {
+      list-style-type: disc;
+    }
+  }
+  .experience__details {
+    width: 35%;
+  }
+}

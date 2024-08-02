@@ -1,0 +1,15 @@
+.interests {
+  margin-bottom: 20px;
+  word-break: break-all;
+  .interests__list {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .interests__item {
+    border-radius: 40px;
+    padding: 4px 10px;
+    background-color: #ffffff;
+  }
+}
