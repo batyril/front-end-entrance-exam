@@ -1,5 +1,5 @@
+/* global html2pdf */
 import { ELEMENTS } from './UI.js';
-import html2pdf from 'html2pdf.js';
 import { getPdfOptions } from './getPdfOptionsPdf.js';
 import { loadContent, saveContent } from './localStorageUtils.js';
 
