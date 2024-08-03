@@ -2,18 +2,18 @@
   cursor: pointer;
   transition: all 0.3s ease-out;
   border-radius: 5px;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   z-index: 2;
   right: 10px;
-  bottom: 10px;
+  bottom: 50px;
   position: fixed;
   border: none;
   padding: 0;
   background-color: var(--bright-yellow-color);
   img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 
   @media (min-width: 850px) {
@@ -32,5 +32,5 @@
   transform: scale(1.1);
 }
 #downloadBtn:active {
-  background-color: #ddf163ff;
+  background-color: var(--green-color);
 }
