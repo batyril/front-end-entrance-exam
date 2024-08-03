@@ -1,15 +1,13 @@
 .language {
   grid-area: language;
-
   .language__item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 1fr;
     margin-bottom: 10px;
     gap: 10px;
-    justify-content: flex-start;
   }
 
   .language__name {
-    width: 30%;
     font-size: 10px;
   }
   .language__filling {
@@ -18,12 +16,22 @@
     width: 100%;
     background-color: var(--green-color);
   }
+  @media (min-width: 850px) {
+    .language__item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 35px;
+    }
+    .language__name {
+      font-size: 20px;
+    }
+  }
 }
 
 .language {
   .language__item:nth-child(4) {
     .language__filling {
-      width: 50%;
+      width: 60%;
     }
   }
 }

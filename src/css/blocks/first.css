@@ -1,0 +1,32 @@
+.first__block {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 10px;
+  grid-template-areas:
+    'image '
+    'intro'
+    'language';
+  @media (min-width: 400px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'image intro'
+      'language language';
+
+    column-gap: 10px;
+  }
+
+  @media (min-width: 595px) {
+    margin: 0 auto;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'image intro language language';
+    gap: 20px;
+  }
+
+  @media (min-width: 850px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'image intro language ';
+  }
+}

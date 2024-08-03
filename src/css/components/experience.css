@@ -7,27 +7,31 @@
   }
   .experience__item {
     position: relative;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     border-radius: 8px;
     padding: 8px;
   }
 
   .experience__item:nth-child(1) {
     background-color: var(--green-color);
-    color: #ffffff;
+    color: var(--white-color);
+    .experience__description {
+      li:before {
+        background: var(--white-color);
+      }
+    }
   }
   .experience__item:first-child:before {
     top: 8px;
     right: 8px;
     position: absolute;
-    font-size: 8px;
     font-weight: 500;
     border-radius: 59px;
     content: 'most recent';
-    width: 61px;
-    height: 16px;
-    background: #7e731266;
-    color: #ddf163;
+    min-width: 61px;
+    min-height: 16px;
+    background: var(--khaki-color);
+    color: var(--bright-yellow-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,32 +39,86 @@
 
   .experience__wrapper {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
+    flex-direction: column;
   }
   .experience__years {
-    width: 50%;
-    font-size: 8px;
-    font-weight: 500;
+    margin-top: 5px;
     margin-bottom: 15px;
+    width: 50%;
+    font-weight: 500;
   }
   .experience__position {
     font-size: 10px;
     font-weight: 500;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
   .experience__format {
-    font-size: 8px;
   }
   .experience__description {
-    font-size: 8px;
-    line-height: 12px;
-    width: 60%;
+    padding-left: 10px;
+    line-height: 11px;
     li {
-      list-style-type: disc;
+      word-break: normal;
+      position: relative;
+    }
+    li:before {
+      position: absolute;
+      left: -7px;
+      top: 5px;
+      content: '';
+      height: 2px;
+      width: 2px;
+      border-radius: 50%;
+      background: #000;
+      display: inline-block;
+      margin: 0 6px 0 0;
+      vertical-align: middle;
     }
   }
   .experience__details {
-    width: 35%;
+  }
+  @media (min-width: 595px) {
+    .experience__wrapper {
+      display: grid;
+      grid-template-columns: 2fr 3.5fr;
+      gap: 4px;
+    }
+    .experience__years {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: 850px) {
+    .experience__description {
+      font-size: 14px;
+      line-height: 150%;
+    }
+    .experience__position {
+      font-size: 24px;
+    }
+    .experience__format {
+      font-size: 12px;
+    }
+    .experience__item {
+      padding: 25px;
+    }
+    .experience__list {
+      gap: 20px;
+    }
+    .experience__years {
+      font-size: 12px;
+    }
+    .experience__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .experience__item:first-child:before {
+      padding: 5px 10px;
+      font-size: 12px;
+      top: 20px;
+      right: 20px;
+    }
   }
 }

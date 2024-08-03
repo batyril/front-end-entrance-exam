@@ -1,8 +1,14 @@
 .contacts {
-  background-color: #000000;
-  color: #ffffff;
+  grid-area: contacts;
+  background-color: var(--black-color);
+  color: var(--white-color);
   .contacts__email {
     color: #dddddd;
     text-decoration: none;
+  }
+  @media (min-width: 850px) {
+    .contacts__email {
+      font-size: 24px;
+    }
   }
 }

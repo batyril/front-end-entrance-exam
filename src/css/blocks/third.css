@@ -1,0 +1,35 @@
+.third__block {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 10px;
+  grid-template-areas:
+    'education '
+    'interest'
+    'contacts';
+  @media (min-width: 400px) {
+    grid-template-columns: 4fr 4fr;
+    grid-template-areas:
+      'education education'
+      'interest interest'
+      'contacts contacts';
+    column-gap: 10px;
+  }
+
+  @media (min-width: 595px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'education  education interest interest'
+      'education education interest interest'
+      'education  education contacts contacts';
+    gap: 20px;
+  }
+
+  @media (min-width: 850px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      ' interest  education education  '
+      ' contacts  education education  ';
+  }
+}

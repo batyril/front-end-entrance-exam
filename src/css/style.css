@@ -3,46 +3,34 @@
   line-height: 1.5;
   font-weight: 400;
   --green-color: #28d979;
+  --dark-green: #149063;
+  --bright-yellow-color: #ddf163;
+
   --gray-color: #f0f0f0;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --khaki-color: #7e731266;
+
+  font-size: 8px;
+}
+
+* {
   box-sizing: border-box;
+  word-break: break-all;
 }
 
-.cv {
-  margin: 0 auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  column-gap: 0;
-  padding: 10px;
-  grid-row-gap: 20px;
-  grid-template-areas:
-    'image '
-    'story'
-    'language'
-    'experience '
-    'tools '
-    'education '
-    'bloks';
+/*TODO: сделать активн для ripple*/
+.ripple {
+  background-position: center;
+  transition: background 0.6s;
 }
-
-/*.cv {*/
-/*  padding: 15px 20px;*/
-/*  margin: 0 auto;*/
-/*  width: 100%;*/
-/*  display: grid;*/
-/*  grid-template-columns: 4fr 4fr 8fr;*/
-/*  grid-template-rows: repeat(6, min-content 124px);*/
-/*  grid-column-gap: 20px;*/
-/*  grid-row-gap: 20px;*/
-/*  grid-template-areas:*/
-/*    'image story language language'*/
-/*    'experience experience experience tools'*/
-/*    'experience experience  experience tools'*/
-/*    'education education bloks bloks'*/
-/*    'education education bloks bloks';*/
-/*}*/
-
-.blocks {
-  grid-area: bloks;
+.ripple:hover {
+  background: var(--bright-yellow-color)
+    radial-gradient(circle, transparent 1%, var(--bright-yellow-color) 1%)
+    center/15000%;
+}
+.ripple:active {
+  background-color: rgba(221, 241, 99, 0.31);
+  background-size: 100%;
+  transition: background 0s;
 }

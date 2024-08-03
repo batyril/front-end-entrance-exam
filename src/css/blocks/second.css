@@ -1,0 +1,35 @@
+.second__block {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 10px;
+  grid-template-areas:
+    'experience '
+    'tools ';
+
+  @media (min-width: 400px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'experience experience '
+      'tools tools ';
+    column-gap: 10px;
+  }
+
+  @media (min-width: 595px) {
+    margin: 0 auto;
+    grid-template-columns: 1fr 124px;
+    grid-template-rows: min-content 124px;
+    grid-template-areas:
+      'experience experience   tools'
+      'experience experience  tools';
+    gap: 20px;
+  }
+
+  @media (min-width: 850px) {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'experience experience    experience tools     ';
+    gap: 20px;
+  }
+}

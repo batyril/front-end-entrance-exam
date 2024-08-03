@@ -1,0 +1,42 @@
+.intro {
+  grid-area: intro;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  .intro__text {
+    font-size: 10px;
+  }
+  .intro__profession {
+    font-size: 12px;
+    font-weight: 500;
+    color: #5c5c5c;
+  }
+  .intro__name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  @media (min-width: 400px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media (min-width: 595px) {
+    .intro__text {
+      flex-grow: 1;
+    }
+  }
+
+  @media (min-width: 850px) {
+    .intro__text {
+      flex-grow: 0;
+      font-size: 14px;
+    }
+    .intro__name {
+      font-size: 24px;
+    }
+    .intro__profession {
+      font-size: 20px;
+    }
+  }
+}
