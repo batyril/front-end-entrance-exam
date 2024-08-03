@@ -50,7 +50,14 @@
     <main class="container">
       <section class="first__block">
         <div class="image">
-          <img alt="profile photo" src="./src/image/profileImg.png" />
+          <picture>
+            <source type="image/avif" srcset="./src/image/profileImg.avif" />
+            <img
+              fetchpriority="high"
+              alt="profile image resume"
+              src="./src/image/profileImg.png"
+            />
+          </picture>
         </div>
         <div class="block intro">
           <p
@@ -77,19 +84,43 @@
         </div>
 
         <div class="block language">
-          <h2 class="title ripple" contenteditable>Languages</h2>
+          <h2
+            data-editable="languageTitle"
+            class="title ripple"
+            contenteditable
+          >
+            Languages
+          </h2>
 
           <div class="language__item">
-            <p contenteditable class="language__name ripple">English</p>
+            <p
+              data-editable="languageName1"
+              contenteditable
+              class="language__name ripple"
+            >
+              English
+            </p>
             <div class="language__filling"></div>
           </div>
 
           <div class="language__item">
-            <p contenteditable class="language__name ripple">Malayalam</p>
+            <p
+              data-editable="languageName2"
+              contenteditable
+              class="language__name ripple"
+            >
+              Malayalam
+            </p>
             <div class="language__filling"></div>
           </div>
           <div class="language__item">
-            <p contenteditable class="language__name ripple">Hindi</p>
+            <p
+              data-editable="languageName3"
+              contenteditable
+              class="language__name ripple"
+            >
+              Hindi
+            </p>
             <div class="language__filling"></div>
           </div>
         </div>
@@ -97,23 +128,27 @@
 
       <section class="second__block">
         <div class="block experience">
-          <h2 contenteditable class="title ripple">Experience</h2>
+          <h2
+            data-editable="experienceTitle"
+            contenteditable
+            class="title ripple"
+          >
+            Experience
+          </h2>
 
-          <div class="experience__list">
-            <div contenteditable class="experience__item">
-              <p contenteditable class="experience__years ripple">
-                Jun. 2023 - Present
-              </p>
+          <div data-editable="experienceYears1" class="experience__list">
+            <div
+              contenteditable
+              data-editable="experienceItem1"
+              class="experience__item"
+            >
+              <p class="experience__years ripple">Jun. 2023 - Present</p>
               <div class="experience__wrapper">
                 <div class="experience__details">
-                  <p contenteditable class="experience__position ripple">
-                    Marketing Manager
-                  </p>
-                  <p contenteditable class="experience__format ripple">
-                    Pankayam | Full-time
-                  </p>
+                  <p class="experience__position ripple">Marketing Manager</p>
+                  <p class="experience__format ripple">Pankayam | Full-time</p>
                 </div>
-                <ul contenteditable class="experience__description ripple">
+                <ul class="experience__description ripple">
                   <li>
                     Strategy development and planning of campaigns that promote
                     the business and generate genuine traffic
@@ -123,20 +158,20 @@
               </div>
             </div>
 
-            <div contenteditable class="experience__item">
-              <p contenteditable class="experience__years ripple">
-                2017 - Present
-              </p>
+            <div
+              data-editable="experienceItem2"
+              contenteditable
+              class="experience__item"
+            >
+              <p class="experience__years ripple">2017 - Present</p>
               <div class="experience__wrapper">
                 <div class="experience__details">
-                  <p contenteditable class="experience__position ripple">
+                  <p class="experience__position ripple">
                     Graphic / Web designer
                   </p>
-                  <p contenteditable class="experience__format ripple">
-                    Freelance
-                  </p>
+                  <p class="experience__format ripple">Freelance</p>
                 </div>
-                <ul contenteditable class="experience__description ripple">
+                <ul class="experience__description ripple">
                   <li>
                     Development of internal projects from scratch, product
                     design of brands
@@ -150,20 +185,21 @@
               </div>
             </div>
 
-            <div contenteditable class="experience__item">
-              <p contenteditable class="experience__years ripple">
-                Sep. 2021 - Jun. 2023
-              </p>
+            <div
+              data-editable="experienceItem3"
+              contenteditable
+              class="experience__item"
+            >
+              <p class="experience__years ripple">Sep. 2021 - Jun. 2023</p>
               <div class="experience__wrapper">
                 <div class="experience__details">
-                  <p contenteditable class="experience__position ripple">
-                    Legal Assistant
-                  </p>
-                  <p contenteditable class="experience__format ripple">
-                    Law Firm | Intern
-                  </p>
+                  <p class="experience__position ripple">Legal Assistant</p>
+                  <p class="experience__format ripple">Law Firm | Intern</p>
                 </div>
-                <ul contenteditable class="experience__description ripple">
+                <ul
+                  data-editable="experienceDescription3"
+                  class="experience__description ripple"
+                >
                   <li>
                     Provide administrative support to lawyer and enhance office
                     effectiveness
@@ -179,10 +215,18 @@
           </div>
         </div>
         <div class="block tools">
-          <h2 contenteditable class="title ripple">Tools</h2>
+          <h2 data-editable="toolsTitle" contenteditable class="title ripple">
+            Tools
+          </h2>
           <div class="tools__list">
             <div class="tools_item">
-              <h3 contenteditable class="tools__subtitle">design</h3>
+              <h3
+                data-editable="toolsSubtitle1"
+                contenteditable
+                class="tools__subtitle"
+              >
+                design
+              </h3>
               <img
                 loading="lazy"
                 src="src/svg/logoFigma.svg"
@@ -211,7 +255,13 @@
               <img loading="lazy" src="src/svg/logoMeet.svg" alt="Meet Logo" />
             </div>
             <div class="tools_item">
-              <h3 contenteditable class="tools__subtitle">no-code</h3>
+              <h3
+                data-editable="toolsSubtitle2"
+                contenteditable
+                class="tools__subtitle"
+              >
+                no-code
+              </h3>
               <img
                 loading="lazy"
                 src="src/svg/logoZapier.svg"
@@ -234,22 +284,26 @@
               />
             </div>
             <div class="tools_item">
-              <h3 contenteditable class="tools__subtitle">
+              <h3
+                data-editable="toolsSubtitle3"
+                contenteditable
+                class="tools__subtitle"
+              >
                 artoficial intelligence
               </h3>
               <img
                 loading="lazy"
-                src="src/image/logoChatGPT.png"
+                src="src/image/logoChatGPT.avif"
                 alt="ChatGPT Logo"
               />
               <img
                 loading="lazy"
-                src="src/image/logoCopilot.png"
+                src="src/image/logoCopilot.avif"
                 alt="Copilot Logo"
               />
               <img
                 loading="lazy"
-                src="src/image/logoMidjourney.png"
+                src="src/image/logoMidjourney.avif"
                 alt="Midjourney Logo"
               />
             </div>
@@ -259,85 +313,224 @@
 
       <section class="third__block">
         <div class="block education">
-          <h2 contenteditable class="title ripple">Education</h2>
+          <h2
+            contenteditable
+            class="title ripple"
+            data-editable="educationTitle"
+          >
+            Education
+          </h2>
 
           <div class="education__list">
-            <div contenteditable class="education__item">
-              <p contenteditable class="education__year ripple">2023</p>
+            <div
+              contenteditable
+              class="education__item"
+              data-editable="educationItem1"
+            >
+              <p
+                contenteditable
+                class="education__year ripple"
+                data-editable="educationYear1"
+              >
+                2023
+              </p>
               <div>
-                <p contenteditable class="education__course ripple">UI/UX</p>
-                <p contenteditable class="education__tags ripple">
+                <p
+                  contenteditable
+                  class="education__course ripple"
+                  data-editable="educationCourse1"
+                >
+                  UI/UX
+                </p>
+                <p
+                  contenteditable
+                  class="education__tags ripple"
+                  data-editable="educationTags1"
+                >
                   #UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux
                 </p>
               </div>
 
-              <p contenteditable class="education__place ripple">Coursera</p>
+              <p
+                contenteditable
+                class="education__place ripple"
+                data-editable="educationPlace1"
+              >
+                Coursera
+              </p>
             </div>
 
-            <div contenteditable class="education__item">
-              <p contenteditable class="education__year ripple">2017 - 2022</p>
+            <div
+              contenteditable
+              class="education__item"
+              data-editable="educationItem2"
+            >
+              <p
+                contenteditable
+                class="education__year ripple"
+                data-editable="educationYear2"
+              >
+                2017 - 2022
+              </p>
 
               <div>
-                <p contenteditable class="education__course ripple">Law</p>
-                <p contenteditable class="education__tags ripple">
+                <p
+                  contenteditable
+                  class="education__course ripple"
+                  data-editable="educationCourse2"
+                >
+                  Law
+                </p>
+                <p
+                  contenteditable
+                  class="education__tags ripple"
+                  data-editable="educationTags2"
+                >
                   #law #legalStudies #contracts #internationalLaws
                 </p>
               </div>
 
-              <p contenteditable class="education__place ripple">
+              <p
+                contenteditable
+                class="education__place ripple"
+                data-editable="educationPlace2"
+              >
                 University of Kerala
               </p>
             </div>
 
-            <div contenteditable class="education__item">
-              <p contenteditable class="education__year ripple">2017</p>
+            <div
+              contenteditable
+              class="education__item"
+              data-editable="educationItem3"
+            >
+              <p
+                contenteditable
+                class="education__year ripple"
+                data-editable="educationYear3"
+              >
+                2017
+              </p>
 
               <div>
-                <p contenteditable class="education__course ripple">
+                <p
+                  contenteditable
+                  class="education__course ripple"
+                  data-editable="educationCourse3"
+                >
                   Graphic design
                 </p>
-                <p contenteditable class="education__tags ripple">
+                <p
+                  contenteditable
+                  class="education__tags ripple"
+                  data-editable="educationTags3"
+                >
                   #branding #web #illustration #adobe
                 </p>
               </div>
 
-              <p contenteditable class="education__place ripple">Coursrea</p>
+              <p
+                contenteditable
+                class="education__place ripple"
+                data-editable="educationPlace3"
+              >
+                Coursera
+              </p>
             </div>
           </div>
         </div>
 
         <div class="block interests">
-          <h2 contenteditable class="title ripple">Interests</h2>
+          <h2
+            contenteditable
+            class="title ripple"
+            data-editable="interestsTitle"
+          >
+            Interests
+          </h2>
           <div class="interests__list">
-            <div contenteditable class="interests__item ripple">branding</div>
-            <div contenteditable class="interests__item ripple">design</div>
-            <div contenteditable class="interests__item ripple">
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem1"
+            >
+              branding
+            </div>
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem2"
+            >
+              design
+            </div>
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem3"
+            >
               photography
             </div>
-            <div contenteditable class="interests__item ripple">
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem4"
+            >
               artificial intelligence
             </div>
-            <div contenteditable class="interests__item ripple">
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem5"
+            >
               illustration
             </div>
-            <div contenteditable class="interests__item ripple">typography</div>
-            <div contenteditable class="interests__item ripple">
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem6"
+            >
+              typography
+            </div>
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem7"
+            >
               social networks
             </div>
-            <div contenteditable class="interests__item ripple">research</div>
-            <div contenteditable class="interests__item ripple">dron pilot</div>
-            <div contenteditable class="interests__item ripple">games</div>
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem8"
+            >
+              research
+            </div>
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem9"
+            >
+              drone pilot
+            </div>
+            <div
+              contenteditable
+              class="interests__item ripple"
+              data-editable="interestsItem10"
+            >
+              games
+            </div>
           </div>
         </div>
 
         <footer class="block contacts">
-          <p contenteditable class="title ripple">
-            Let´s chat! I´m ready to work on excinting projects
+          <p contenteditable class="title ripple" data-editable="footerTitle">
+            Let´s chat! I´m ready to work on exciting projects
           </p>
           <a
             contenteditable
             class="contacts__email ripple"
             href="mailto:srkarthik.designscape@gmail.com"
+            data-editable="footerEmail"
           >
             srkarthik.designscape@gmail.com
           </a>
