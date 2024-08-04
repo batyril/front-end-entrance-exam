@@ -1,6 +1,6 @@
 .ripple {
   background-position: center;
-  transition: background 0.6s;
+  transition: all 0.3s ease-in-out;
 }
 
 .ripple:hover {

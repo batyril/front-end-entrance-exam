@@ -14,8 +14,8 @@
     gap: 20px;
     position: relative;
     img {
-      width: 19px;
-      height: 19px;
+      width: 16px;
+      height: 16px;
     }
   }
   .tools__subtitle {
@@ -43,8 +43,8 @@
 
     .tools__item {
       padding: 16px 14px;
-      gap: 14px;
-      margin: 0 10px;
+      gap: 17px;
+      margin: 0 12px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(1, 1fr);
