@@ -11,7 +11,7 @@
   .intro__profession {
     font-size: 12px;
     font-weight: 500;
-    color: #5c5c5c;
+    color: var(--dark-grey);
   }
   .intro__name {
     font-size: 14px;

@@ -1,36 +1,19 @@
 :root {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
   --green-color: #28d979;
   --dark-green: #149063;
   --bright-yellow-color: #ddf163;
-
   --gray-color: #f0f0f0;
   --white-color: #ffffff;
   --black-color: #000000;
   --khaki-color: #7e731266;
-
-  font-size: 8px;
+  --dark-grey: #5c5c5c;
 }
 
 * {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
   box-sizing: border-box;
   word-break: break-all;
-}
-
-/*TODO: сделать активн для ripple*/
-.ripple {
-  background-position: center;
-  transition: background 0.6s;
-}
-.ripple:hover {
-  background: var(--bright-yellow-color)
-    radial-gradient(circle, transparent 1%, var(--bright-yellow-color) 1%)
-    center/15000%;
-}
-.ripple:active {
-  background-color: rgba(221, 241, 99, 0.31);
-  background-size: 100%;
-  transition: background 0s;
 }

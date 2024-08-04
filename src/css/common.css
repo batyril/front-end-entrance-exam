@@ -9,10 +9,21 @@
   }
 }
 
-.block {
+.block-gray {
   padding: 12px;
   background-color: var(--gray-color);
   border-radius: 12px;
+  @media (min-width: 850px) {
+    padding: 25px;
+  }
+}
+
+.block-white {
+  position: relative;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border-radius: 8px;
+  padding: 8px;
   @media (min-width: 850px) {
     padding: 25px;
   }

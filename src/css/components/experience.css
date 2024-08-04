@@ -5,12 +5,6 @@
     flex-direction: column;
     gap: 10px;
   }
-  .experience__item {
-    position: relative;
-    background-color: var(--white-color);
-    border-radius: 8px;
-    padding: 8px;
-  }
 
   .experience__item:nth-child(1) {
     background-color: var(--green-color);
@@ -70,7 +64,7 @@
       height: 2px;
       width: 2px;
       border-radius: 50%;
-      background: #000;
+      background: var(--black-color);
       display: inline-block;
       margin: 0 6px 0 0;
       vertical-align: middle;
@@ -99,9 +93,6 @@
     }
     .experience__format {
       font-size: 12px;
-    }
-    .experience__item {
-      padding: 25px;
     }
     .experience__list {
       gap: 20px;

@@ -59,7 +59,7 @@
             />
           </picture>
         </div>
-        <div class="block intro">
+        <div class="block-gray intro">
           <p
             data-editable="introText"
             contenteditable
@@ -83,7 +83,7 @@
           </p>
         </div>
 
-        <div class="block language">
+        <div class="block-gray language">
           <h2
             data-editable="languageTitle"
             class="title ripple"
@@ -127,7 +127,7 @@
       </section>
 
       <section class="second__block">
-        <div class="block experience">
+        <div class="block-gray experience">
           <h2
             data-editable="experienceTitle"
             contenteditable
@@ -140,7 +140,7 @@
             <div
               contenteditable
               data-editable="experienceItem1"
-              class="experience__item"
+              class="block-white experience__item"
             >
               <p class="experience__years ripple">Jun. 2023 - Present</p>
               <div class="experience__wrapper">
@@ -161,7 +161,7 @@
             <div
               data-editable="experienceItem2"
               contenteditable
-              class="experience__item"
+              class="block-white experience__item"
             >
               <p class="experience__years ripple">2017 - Present</p>
               <div class="experience__wrapper">
@@ -188,7 +188,7 @@
             <div
               data-editable="experienceItem3"
               contenteditable
-              class="experience__item"
+              class="block-white experience__item"
             >
               <p class="experience__years ripple">Sep. 2021 - Jun. 2023</p>
               <div class="experience__wrapper">
@@ -214,16 +214,16 @@
             </div>
           </div>
         </div>
-        <div class="block tools">
+        <div class="block-gray tools">
           <h2 data-editable="toolsTitle" contenteditable class="title ripple">
             Tools
           </h2>
           <div class="tools__list">
-            <div class="tools_item">
+            <div class="block-white tools__item">
               <h3
                 data-editable="toolsSubtitle1"
                 contenteditable
-                class="tools__subtitle"
+                class="tools__subtitle ripple"
               >
                 design
               </h3>
@@ -254,11 +254,11 @@
               />
               <img loading="lazy" src="src/svg/logoMeet.svg" alt="Meet Logo" />
             </div>
-            <div class="tools_item">
+            <div class="block-white tools__item">
               <h3
                 data-editable="toolsSubtitle2"
                 contenteditable
-                class="tools__subtitle"
+                class="tools__subtitle ripple"
               >
                 no-code
               </h3>
@@ -283,36 +283,48 @@
                 alt="Wordpress Logo"
               />
             </div>
-            <div class="tools_item">
+            <div class="block-white tools__item">
               <h3
                 data-editable="toolsSubtitle3"
                 contenteditable
-                class="tools__subtitle"
+                class="tools__subtitle ripple"
               >
                 artoficial intelligence
               </h3>
-              <img
-                loading="lazy"
-                src="src/image/logoChatGPT.avif"
-                alt="ChatGPT Logo"
-              />
-              <img
-                loading="lazy"
-                src="src/image/logoCopilot.avif"
-                alt="Copilot Logo"
-              />
-              <img
-                loading="lazy"
-                src="src/image/logoMidjourney.avif"
-                alt="Midjourney Logo"
-              />
+              <picture>
+                <source type="image/avif" srcset="src/image/logoChatGPT.avif" />
+                <img
+                  loading="lazy"
+                  src="src/image/logoChatGPT.png"
+                  alt="ChatGPT Logo"
+                />
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="src/image/logoCopilot.avif" />
+                <img
+                  loading="lazy"
+                  src="src/image/logoCopilot.png"
+                  alt="Copilot Logo"
+                />
+              </picture>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="src/image/logoMidjourney.avif"
+                />
+                <img
+                  loading="lazy"
+                  src="src/image/logoMidjourney.png"
+                  alt="Copilot Logo"
+                />
+              </picture>
             </div>
           </div>
         </div>
       </section>
 
       <section class="third__block">
-        <div class="block education">
+        <div class="block-gray education">
           <h2
             contenteditable
             class="title ripple"
@@ -322,15 +334,11 @@
           </h2>
 
           <div class="education__list">
-            <div
-              contenteditable
-              class="education__item"
-              data-editable="educationItem1"
-            >
+            <div contenteditable class="block-white education__item">
               <p
                 contenteditable
                 class="education__year ripple"
-                data-editable="educationYear1"
+                data-editable="educationYear1 "
               >
                 2023
               </p>
@@ -338,14 +346,14 @@
                 <p
                   contenteditable
                   class="education__course ripple"
-                  data-editable="educationCourse1"
+                  data-editable="educationCourse1 "
                 >
                   UI/UX
                 </p>
                 <p
                   contenteditable
+                  data-editable="educationTags1 "
                   class="education__tags ripple"
-                  data-editable="educationTags1"
                 >
                   #UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux
                 </p>
@@ -354,21 +362,21 @@
               <p
                 contenteditable
                 class="education__place ripple"
-                data-editable="educationPlace1"
+                data-editable="educationPlace1 "
               >
                 Coursera
               </p>
             </div>
 
             <div
+              class="education__item block-white"
               contenteditable
-              class="education__item"
               data-editable="educationItem2"
             >
               <p
                 contenteditable
-                class="education__year ripple"
-                data-editable="educationYear2"
+                class="education__year"
+                data-editable="educationYear2  ripple"
               >
                 2017 - 2022
               </p>
@@ -401,8 +409,8 @@
 
             <div
               contenteditable
-              class="education__item"
               data-editable="educationItem3"
+              class="block-white education__item"
             >
               <p
                 contenteditable
@@ -421,8 +429,8 @@
                   Graphic design
                 </p>
                 <p
-                  contenteditable
                   class="education__tags ripple"
+                  contenteditable
                   data-editable="educationTags3"
                 >
                   #branding #web #illustration #adobe
@@ -440,7 +448,7 @@
           </div>
         </div>
 
-        <div class="block interests">
+        <div class="block-gray interests">
           <h2
             contenteditable
             class="title ripple"
@@ -522,7 +530,7 @@
           </div>
         </div>
 
-        <footer class="block contacts">
+        <footer class="block-gray contacts">
           <p contenteditable class="title ripple" data-editable="footerTitle">
             Let´s chat! I´m ready to work on exciting projects
           </p>
