@@ -7,11 +7,13 @@ export function getPdfOptions() {
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: {
       scale: 2,
+      letterRendering: true,
+      useCORS: true,
     },
     jsPDF: {
       unit: 'in',
       format: 'letter',
-      orientation: isPortrait ? 'portrait' : 'landscape',
+      orientation: isPortrait ? 'portrait' : 'portrait',
     },
   };
 }
