@@ -14,7 +14,13 @@
         background: var(--white-color);
       }
     }
+    .experience__description:hover {
+      li:before {
+        background: var(--black-color);
+      }
+    }
   }
+
   .experience__top {
     display: flex;
     justify-content: space-between;
